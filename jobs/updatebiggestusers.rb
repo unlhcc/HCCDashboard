@@ -43,7 +43,7 @@ SCHEDULER.every '30m', :first_in => 0 do |job|
   db = Mysql2::Client.new(con)#dbconf['rcfmysql_host'], dbconf['rcfmysql_username'], dbconf['rcfmysql_pass'], dbconf['rcfmysql_db'])
   sorted = list.sort_by{|e| -e[:value]}.slice(0, 25)
   sorted.each_index do |index|
-   results = db.query("select Department, Campus from Personal where LoginID = '%{username}'" % { :username => sorted[index][:label] })
+    results = db.query("select Department, Campus from Personal where LoginID = '%{username}'" % { :username => sorted[index][:label] })
     #puts query
     #puts "Starting query..."
     #results = db.query(query)
@@ -51,10 +51,11 @@ SCHEDULER.every '30m', :first_in => 0 do |job|
     
     results.each do |row|
       if row != nil
-        sorted[index]["dept"] = row[0]
-        sorted[index]["campus"] = row[1]
+        
+        sorted[index]["dept"] = row["Department"]
+        sorted[index]["campus"] = row["Campus"]
         #File.open("/tmp/csv.file", 'a') { |f| f.write(sorted[index]) }
-    
+     
       end  
     end
   end

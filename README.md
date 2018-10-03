@@ -8,8 +8,8 @@ Install the prereq mysql library:
 
 Install dashing with gems (requires 1.9+ ruby):
 
-    gem install dashing
-    gem install mysql
+    gem install smashing
+    gem install mysql2
 
 You will also need to install node.js.  I installed it from the Linux 
 binaries tarball using the command:
