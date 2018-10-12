@@ -19,7 +19,7 @@ $(function() {
       <div data-id="TuskerRunning" data-view="RunningJobs" data-title="Tusker: Running" style="background-color:#90CA77;"></div>
     </li>
      <li data-row="1" data-col="2" data-sizex="1" data-sizey="1">
-      <div data-id="CraneRunning" data-view="RunningJobs" data-title="Crane: Running" style="background-color:#81C6DD"></div>
+      <div data-id="CraneRunning" data-view="RunningJobs" data-title="Crane: Running" style="background-color:#E9B64D"></div>
     </li>
      <!--<li data-row="1" data-col="3" data-sizex="1" data-sizey="1">
       <div data-id="SandhillsRunning" data-view="RunningJobs" data-title="Sandhills: Running" style="background-color:#E9B64D"></div>
@@ -31,17 +31,17 @@ $(function() {
       <div data-id="HCCAmazonPrice" data-view="AmazonPrice" data-title="Hourly Price On Amazon EC2" style="background-color:#90CA77;"></div>
     </li>
     <li data-row="2" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="TuskerStorage" data-view="StorageMeter" data-title="Tusker Storage"></div>
+      <div data-id="TuskerStorage" data-view="StorageMeter" data-title="Tusker Storage (TB)"></div>
     </li>
     <li data-row="2" data-col="2" data-sizex="1" data-sizey="1">
-      <div data-id="CraneStorage" data-view="StorageMeter" data-title="Crane Storage" style="background-color:#90CA77;"></div>
+      <div data-id="CraneStorage" data-view="StorageMeter" data-title="Crane Storage (TB)" style="background-color:#90CA77;"></div>
       </li>
     <!--
     <li data-row="2" data-col="3" data-sizex="1" data-sizey="1">
       <div data-id="SandhillsStorage" data-view="StorageMeter" data-title="Sandhills Storage" style="background-color:#81C6DD;"></div>
     </li>-->
     <li data-row="2" data-col="3" data-sizex="1" data-sizey="1">
-      <div data-id="RedStorage" data-view="StorageMeter" data-title="Red Storage" style="background-color:#E9B64D;"></div>
+      <div data-id="RedStorage" data-view="StorageMeter" data-title="Red Storage (TB)" style="background-color:#E9B64D;"></div>
     </li>
 
 
@@ -57,12 +57,21 @@ $(function() {
       <div data-id="HoursWeek" data-view="Number" data-title="CPU Hours This Week"></div>
     </li>
 -->
+    <li data-row="4" data-col="2" data-sizex="2" data-sizey="1">
+      <div data-id="internet" data-view="Text"  data-bind ="text | raw" data-title="Internet Useage" style="background-color: #1e90ff"></div>
+      </li>
+       <li data-row="4" data-col="1" data-sizex="1" data-sizey="1">
+            <div data-id="PKIMeter" data-view="StorageMeter" data-title="PKI WAN (mbps)" data-height="300" data-width="300" data-min="0" data-suffix="mbps"></div>
+       </li>
+       <li data-row="4" data-col="4" data-sizex="1" data-sizey="1">
+            <div data-id="ShorMeter" data-view="StorageMeter" data-title="Shor WAN (gbps)" data-height="300" data-width="300" data-min="0" data-suffix="gbps"></div>
+       </li>
     <li data-row="3" data-col="3" data-sizex="2" data-sizey="1">
-      <div data-id="ShorNetworkGraph" data-view="NetworkGraph" data-title="Shor Internet Bandwidth" data-suffix="ps"></div>
+    <div data-id="ShorNetworkGraph" data-view="NetworkGraph" data-title="Shor Internet Bandwidth" data-suffix="ps" style="background-color:#F58A1F;"></div>
     </li>
     <li data-row="3" data-col="1" data-sizex="2" data-sizey="1">
-          <div data-id="PkiNetworkGraph" data-view="NetworkGraph" data-title="PKI Internet Bandwidth" data-suffix="ps"></div>
-        </li>
+          <div data-id="PkiNetworkGraph" data-view="NetworkGraph" data-title="PKI Internet Bandwidth" data-suffix="ps" style="background-color:#F58A1F;"></div>
+          </li>
 
 </ul>
 </div>
