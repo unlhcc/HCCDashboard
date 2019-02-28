@@ -1,2 +1,9 @@
 *DS_STORE
 history.yml
+data/
+*.rrd
+*.csv
+*.temp
+VizKey2
+*.lock
+

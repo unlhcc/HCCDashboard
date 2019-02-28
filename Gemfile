@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'dashing'
 gem 'sinatra_cyclist'
-gem 'mysql'
+gem 'mysql2'
 gem 'rrd-ffi'
 gem 'filesize'
 gem 'httpclient'

@@ -2,7 +2,7 @@ require "sinatra/cyclist"
 require 'dashing'
 
 configure do
-  set :auth_token, '542221b1-b765-4cd9-a9e6-0c0727870375'
+  set :auth_token, 'secret'
 
   helpers do
     def protected!
