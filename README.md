@@ -2,14 +2,9 @@
 
 ## Installation
 
-Install the prereq mysql library:
-
-    yum install mysql-devel
-
 Install dashing with gems (requires 1.9+ ruby):
 
     gem install smashing
-    gem install mysql2
 
 You will also need to install node.js.  I installed it from the Linux 
 binaries tarball using the command:
