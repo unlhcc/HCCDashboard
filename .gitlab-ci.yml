@@ -17,9 +17,6 @@ deploy:
   before_script:
     - eval $(ssh-agent -s) > /dev/null
     - mkdir -p ~/.ssh
-    - chown 700 ~/.ssh
-    - echo $SSH_KNOWN_HOSTS > ~/.ssh/known_hosts
-    - chmod 644 ~/.ssh/known_hosts
     - ssh-add <(echo "$SSH_PRIVATE_KEY" | base64 --decode)
   script:
     - cd $REPO_DIR
@@ -39,7 +36,7 @@ sync-to-github:
   script:
     - eval $(ssh-agent -s) > /dev/null
     - mkdir -p ~/.ssh
-    - chown 700 ~/.ssh
+    - chmod 700 ~/.ssh
     - echo $GITHUB_SSH_KNOWN_HOSTS > ~/.ssh/known_hosts
     - chmod 644 ~/.ssh/known_hosts
     - ssh-add <(echo "$GITHUB_SSH_DEPLOY_PKEY" | base64 --decode)
