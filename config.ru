@@ -3,7 +3,7 @@ require 'dashing'
 
 configure do
   set :auth_token, 'secret'
-
+  set :default_dashboard, 'hcc'
   helpers do
     def protected!
      # Put any authentication code you want in here.
@@ -17,5 +17,6 @@ map Sinatra::Application.assets_prefix do
 end
 
 set :routes_to_cycle_through, [:hcc, :hcc2]
+
 
 run Sinatra::Application
