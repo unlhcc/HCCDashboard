@@ -95,6 +95,8 @@ class Dashing.AmazonPrice extends Dashing.Widget
   red_storage: 0.0
   rhino_storage: 0.0
   crane_storage: 0.0
+  rhino_cores: 0.0
+  crane_cores: 0.0
   total_storage: 0.0
   total_cores: 0.0
 
