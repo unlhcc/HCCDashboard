@@ -1,0 +1,58 @@
+<!-- 
+
+Color palett:
+#90CA77, #81C6DD, #E9B64D, #E48743, #9E3B33
+
+-->
+<script type='text/javascript'>
+$(function() {
+  // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
+  // Dashing.gridsterLayout('[{"col":2,"row":1},{"col":1,"row":1},{"col":3,"row":1},{"col":2,"row":2},{"col":3,"row":2},{"col":1,"row":2},{"col":5,"row":1},{"col":4,"row":2},{"col":2,"row":3}]')
+  Dashing.widget_base_dimensions = [370, 340]
+  Dashing.numColumns = 5
+});
+</script>
+
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+		<div data-id="RhinoRunning" data-view="RunningJobs" data-title="Rhino: Running" style="background-color:#90CA77;"></div>
+    </li>
+    <li data-row="1" data-col="2" data-sizex="1" data-sizey="1">
+		<div data-id="CraneRunning" data-view="RunningJobs" data-title="Crane: Running" style="background-color:#E9B64D"></div>
+    </li>
+	<li data-row="1" data-col="3" data-sizex="1" data-sizey="1">
+		<div data-id="HoursToday" data-view="Number" data-title="CPU Hours Today"></div>
+    </li>
+    <li data-row="1" data-col="4" data-sizex="1" data-sizey="1">
+		<div data-id="JobsCompleted" data-view="NonShortenedNumber" data-title="Jobs Completed Today"></div>
+    </li>
+    <li data-row="1" data-col="5" data-sizex="1" data-sizey="1">
+		<div data-id="ShorNetworkGraph" data-view="NetworkGraph" data-title="Shor Internet Bandwidth" data-suffix="ps" style="background-color:#F58A1F;"></div>
+    </li>
+    <li data-row="2" data-col="4" data-sizex="1" data-sizey="1">
+		<div data-id="HCCAmazonPrice" data-view="AmazonPrice" data-title="Hourly Price On Amazon EC2" style="background-color:#90CA77;"></div>
+    </li>
+    <li data-row="2" data-col="1" data-sizex="1" data-sizey="1">
+		<div data-id="RhinoStorage" data-view="StorageMeter" data-title="Rhino Storage (TB)"></div>
+    </li>
+    <li data-row="2" data-col="2" data-sizex="1" data-sizey="1">
+		<div data-id="CraneStorage" data-view="StorageMeter" data-title="Crane Storage (TB)" style="background-color:#90CA77;"></div>
+    </li>
+    <li data-row="2" data-col="3" data-sizex="1" data-sizey="1">
+		<div data-id="RedStorage" data-view="StorageMeter" data-title="Red Storage (TB)" style="background-color:#E9B64D;"></div>
+    </li>
+    <li data-row="2" data-col="5" data-sizex="1" data-sizey="1">
+        <div data-id="PkiNetworkGraph" data-view="NetworkGraph" data-title="PKI Internet Bandwidth" data-suffix="ps" style="background-color:#F58A1F;"></div>
+    </li>
+	<li data-row="3" data-col="5" data-sizex="1" data-sizey="1">
+		<div data-id="AnvilTile" data-view="AnvilList" data-title="Current Anvil Instances" style="background-color:#9c4274"></div>
+    </li>
+	<li data-row="3" data-col="1" data-sizex="2" data-sizey="1">
+		<div data-id="TopWeek" data-view="HoursList" data-title="Top Omaha Users This Week" style="background-color:#9E3B33"></div>
+	</li>
+	<li data-row="3" data-col="3" data-sizex="2" data-sizey="1">
+		<div data-id="TopMonth" data-view="HoursList" data-title="Top Omaha Users This Month" style="background-color:#9E3B33"></div>
+    </li>
+  </ul>
+</div>

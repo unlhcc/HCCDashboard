@@ -1,0 +1,28 @@
+<h1 class="title" data-bind="title"></h1>
+
+<h2 class="value"><span data-bind="current_vm"></span></h2>
+
+
+<ul class="list-nostyle">
+    <li>
+     <span class="list-label">Cores</span>
+     <span class="list-value" data-bind="current_cores | append ' Cores' "></span>
+    </li>
+
+  <li>
+    <span class="list-label">Memory</span>
+    <span class="list-value" data-bind="current_mem | append ' TB' "></span>
+  </li>
+  <li>
+    <span class="list-label">Disk Space</span>
+    <span class="list-value" data-bind="current_disk | append ' TB' "></span>
+  </li>
+  <li>
+    <span class="list-label">Volume Space</span>
+    <span class="list-value" data-bind="current_vol | append ' TB' "></span>
+  </li>
+ 
+
+</ul>
+
+<!-- <p class="updated-at" data-bind="updatedAtMessage"></p> -->
